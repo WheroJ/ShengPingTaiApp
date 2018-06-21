@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_105"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp_8">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_tv_operationLogDetailStepName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/sp_16"/>
+        <TextView
+            android:id="@+id/item_tv_operationLogDetailBeginDayTime"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/sp_14"/>
+        <TextView
+            android:id="@+id/item_tv_operationLogDetailEndDayTime"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/sp_14"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/item_tv_operationLogDetailStatus"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="center"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/green_0ac"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_enter"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_f2"/>
+</RelativeLayout>

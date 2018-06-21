@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cmcc.pp.ui.widget.RefreshLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_f2"
+    android:id="@+id/content">
+
+    <ScrollView
+        android:id="@+id/workorderdetails_scrollView"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/layout_workorderdetatils_body"></include>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_null"
+        android:visibility="gone"
+        android:paddingTop="@dimen/dp_32"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/notfindworkorder"
+        android:textColor="@color/gray_deep"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/sp_16"/>
+
+</com.cmcc.pp.ui.widget.RefreshLinearLayout>

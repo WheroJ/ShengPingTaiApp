@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_105"
+    android:layout_marginTop="@dimen/dp_16"
+    android:background="@color/white"
+    android:id="@+id/relat_step">
+
+
+    
+    <TextView
+        android:id="@+id/result_tv_step"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_25"
+        android:background="@drawable/bg_yellow_all_16radius"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        android:text=""/>
+    <RelativeLayout
+        android:layout_toRightOf="@+id/result_tv_step"
+        android:layout_toLeftOf="@+id/result_lin_enter"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/result_tv_dialingMessage"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_deep"
+            android:text=""/>
+
+
+        <TextView
+            android:id="@+id/result_tv_beginTime"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/sp_16"
+            android:text=""/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/result_lin_enter"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--成功绿色，失败红色-->
+        <TextView
+            android:id="@+id/result_tv_status"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/main_green"
+            android:textSize="@dimen/sp_16"
+            android:text=""/>
+        <ImageView
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/icon_enter"/>
+
+    </LinearLayout>
+    
+</RelativeLayout>

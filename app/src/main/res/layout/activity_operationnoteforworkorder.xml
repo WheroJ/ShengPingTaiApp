@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cmcc.pp.ui.widget.RefreshLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/content"
+    android:background="@color/gray_f2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/image_label"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_label"/>
+
+        <TextView
+            android:id="@+id/operationnoteforworkorder_tv_operationLogDayTime"
+            android:layout_toRightOf="@+id/image_label"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_deep"/>
+
+        <TextView
+            android:id="@+id/operationnoteforworkorder_tv_operationLogStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:gravity="center"
+            android:textColor="@color/green_0ac"
+            android:textSize="@dimen/sp_16"
+            android:text=""/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_16"></View>
+
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/operationnoteforworkorder_swipeRefreshLayout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/operationnoteforworkorder_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.cjj.MaterialRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_null"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_32"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="没有数据"
+        android:textColor="@color/gray_deep"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/sp_16"/>
+
+</com.cmcc.pp.ui.widget.RefreshLinearLayout>

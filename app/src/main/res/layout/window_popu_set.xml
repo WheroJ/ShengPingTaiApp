@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="#dadada"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/bt_signout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:text="@string/signout"
+            android:background="@color/white"
+            android:textColor="@color/main_blue"
+            android:textSize="@dimen/sp_16"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:orientation="vertical">
+
+        <Button
+            android:background="@color/white"
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:text="@string/cancel"
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/sp_16"
+            />
+    </LinearLayout>
+
+</LinearLayout>

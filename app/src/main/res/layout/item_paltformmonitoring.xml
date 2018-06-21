@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/paltform_item"
+        android:layout_width="@dimen/dp_105"
+        android:layout_height="110dp"
+        android:layout_margin="@dimen/dp_5"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_white_lin_red_4radius">
+        <!--红线背景-->
+        <!--android:background="@drawable/"-->
+
+        <!--icon_red_point 不正常为红点    正常为绿点-->
+        <ImageView
+            android:id="@+id/paltform_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            tools:src="@mipmap/icon_green_point" />
+
+        <!--正常字体颜色ff0000,不正常black_26-->
+        <TextView
+            android:id="@+id/paltform_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_16"
+            android:gravity="center"
+            android:textColor="@color/main_red"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            tools:text="Nginx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/paltform_name"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/sp_14"
+            tools:text="12-18 15:35" />
+
+
+        <!-- 正常背景f2f2f2，不正常背景red_ffe6e5-->
+        <LinearLayout
+            android:id="@+id/paltform_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_f2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:scaleType="center"
+                android:src="@mipmap/icon_computer" />
+
+            <TextView
+                android:id="@+id/platform_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:gravity="center"
+                android:text="20/22"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

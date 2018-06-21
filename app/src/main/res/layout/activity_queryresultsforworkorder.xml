@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cmcc.pp.ui.widget.RefreshLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    android:id="@+id/content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        <ImageView
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_label"/>
+        <TextView
+            android:id="@+id/tv_userAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:gravity="center"
+            android:text=""
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_deep"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="查询结果:"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_deep"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/workorder_lin_result"-->
+        <!--android:layout_marginTop="@dimen/dp_16"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+        <!--<include-->
+            <!--layout="@layout/item_queryresultsforworkorder"></include>-->
+    <!--</LinearLayout>-->
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/workorder_swipeRefreshLayout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/workorder_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.cjj.MaterialRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_null"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_32"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/notfindworkorder"
+        android:textColor="@color/gray_deep"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/sp_16"/>
+
+</com.cmcc.pp.ui.widget.RefreshLinearLayout>

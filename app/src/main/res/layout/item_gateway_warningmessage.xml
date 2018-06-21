@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_146"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_16"
+        android:background="@color/gray_f2"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_warningmessage_alarmName"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/main_red"/>
+
+
+        <TextView
+            android:layout_toLeftOf="@+id/item_warningmessage_alarmNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray_deep"
+            android:gravity="center"
+            android:text="@string/serialnumber"
+            android:textSize="@dimen/sp_16"/>
+        <TextView
+            android:id="@+id/item_warningmessage_alarmNum"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray_deep"
+            android:gravity="center"
+            android:text=""
+            android:textSize="@dimen/sp_16"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/warningtype"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_deep"/>
+
+        <TextView
+            android:id="@+id/item_warningmessage_alarmType"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_light"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/triggerconditions"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_deep"/>
+
+        <TextView
+            android:id="@+id/item_warningmessage_alarmToggle"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_light"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/attachmessage"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_deep"/>
+
+        <TextView
+            android:id="@+id/item_warningmessage_alarmAppendInfo"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_light"
+            android:text=""/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

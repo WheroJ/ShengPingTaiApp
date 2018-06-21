@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">省平台APP</string>
+    <string name="login">登陆</string>
+    <string name="back">返回</string>
+    <string name="cancel">取消</string>
+    <string name="cheack">查询</string>
+    <string name="str_setting">设置</string>
+    <string name="signout">退出登录</string>
+    <string name="more">更多</string>
+    <string name="finish">完成</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="rt_exit">再按一次退出程序</string>
+    <string name="re_get_sms_code">重新获取(%1$s)</string>
+    <string name="captcha_code_get">发送验证码</string>
+
+    <string name="str_transactiondata">业务数据</string>
+
+    <string name="str_platformmoitoring">平台监控</string>
+
+    <string name="str_workorder">工单管理</string>
+    <string name="str_workordercheack">工单查询</string>
+
+    <string name="str_gatewayadministration">网关管理</string>
+    <string name="str_gatewaycheack">网关查询</string>
+    <string name="str_gatewaydetails">网关详情</string>
+    <string name="str_gatewaymessage">网关信息</string>
+    <string name="str_queryresults">查询结果</string>
+    <string name="str_deagnosticmessage">诊断信息</string>
+    <string name="str_upstreamuate">上行速率</string>
+    <string name="str_kpbs">下行速率</string>
+    <string name="str_warningmessage">告警信息</string>
+    <string name="str_moreinformation">更多信息</string>
+    <string name="str_gatewayedthint">SN/MAC/loid/宽带账号</string>
+    <string name="str_workorderedthint">工单号/宽带账号/loid</string>
+
+
+
+    <string name="str_terminalmanufacturer">终端厂家:</string>
+    <string name="str_zdSN">终端SN;</string>
+    <string name="str_MACAddress">MAC地址;</string>
+    <string name="str_Broadbandaccount">宽带账号;</string>
+    <string name="str_PASSWORD">PASSWORD认证密码:</string>
+
+
+    <string name="str_terminalmanufacturer1">终端厂家</string>
+    <string name="str_devicetype">设备类型</string>
+    <string name="str_oui">OUI</string>
+    <string name="str_zdSN1">终端SN</string>
+    <string name="str_attributionarea">归属地区</string>
+    <string name="str_broadbandaccount1">宽带账号</string>
+    <string name="str_terminalregistrationstatus">终端注册状态</string>
+    <string name="str_terminalmodel">终端型号</string>
+    <string name="str_firmware">固件版本</string>
+    <string name="str_hardwareversion">硬件版本</string>
+    <string name="str_ip">IP地址</string>
+    <string name="str_MACAddress1">MAC地址</string>
+    <string name="str_nettime">入网时间</string>
+    <string name="str_recentconnectiontime">最近连接时间</string>
+    <string name="str_gatewaydigestaccount">网关认证平台digest账号</string>
+    <string name="str_gatewaydigestpassword">网关认证平台digest密码</string>
+    <string name="str_platformdigestaccount">平台认证网关digest账号</string>
+    <string name="str_platformdigestpassword">平台认证网关digest密码</string>
+    <string name="str_equipmentmaintenanceaccount">设备维护账号</string>
+    <string name="str_equipmentmaintenancepassword">设备维护密码</string>
+    <string name="str_PASSWORD1">PASSWORD认证密码</string>
+    <string name="str_reverseconnectionURL">反向连接URL</string>
+    <string name="str_JVMversion">JVM版本</string>
+    <string name="str_OSGIversion">OSGI版本</string>
+    <string name="str_flow">流量</string>
+    <string name="str_LANnum">LAN口数量</string>
+    <string name="str_USBnum">USB口数量</string>
+    <string name="str_IPv4tenability">IPv4/IPv6支持能力</string>
+    <string name="str_doesitsupportwireless">是否支持无线</string>
+    <string name="str_wirelessantennaposition">无线天线位置</string>
+    <string name="str_wirelessantennanum">无线天线数</string>
+    <string name="str_wirelessantennasize">无线天线尺寸</string>
+    <string name="str_WIFI2.4GHztenability">WIFI2.4GHz能力</string>
+    <string name="str_WIFI5.8GHztenability">WIFI5.8GHz能力</string>
+    <string name="str_Gateway">网关名称</string>
+
+
+
+    <string name="str_thisdiagnosisresult">本次诊断结果</string>
+    <string name="str_checksresult">查询结果</string>
+    <string name="str_linestatus">线路状态:</string>
+    <string name="str_PONtransmittingpower">PON口的发射光功率(微瓦):</string>
+    <string name="str_PONreceivedpower">PON口的接收光功率(微瓦):</string>
+    <string name="str_workingtemperatureoftheopticalmodule">光模块的工作温度(度):</string>
+    <string name="str_powersupplyvoltageoftheopticalmodule">光模块的供电电压(微伏):</string>
+    <string name="str_biascurrentofopticaltransmitter">光发送机的偏置电流(微安):</string>
+    <string name="str_sendbytes">发送的字节数:</string>
+    <string name="str_bytesreceived">接收的字节数:</string>
+    <string name="str_numberoftransmissionframes">发送帧个数:</string>
+    <string name="str_numberofreceivedframes">接收帧个数:</string>
+    <string name="str_sendasinglewave">发送单波帧数:</string>
+    <string name="str_singlewavereceivingframes">接收单波帧数:</string>
+    <string name="str_sendgroupwaveframes">发送组波帧数:</string>
+    <string name="str_wavegroupreceivedframes">接收组波帧数:</string>
+    <string name="str_sendradiowavenumber">发送广播波帧数:</string>
+    <string name="str_radiowavereceivingframes">接收广播波帧数:</string>
+    <string name="str_FECerrorframesreceived">接收的FEC错误帧数:</string>
+    <string name="str_HECerrorframesreceived">接收的HEC错误帧数:</string>
+    <string name="str_transmissiondirectionofdroppedframes">发送方向丢帧数:</string>
+    <string name="str_sendPAUSEflowcontrolframes">发送的PAUSE流控制帧数:</string>
+    <string name="str_receivingthePAUSEflowcontrolframes">接收的PAUSE流控制帧数:</string>
+
+    <string name="warningtype">告警类型:</string>
+    <string name="triggerconditions">触发条件:</string>
+    <string name="attachmessage">附加信息:</string>
+    <string name="serialnumber">编号:</string>
+
+
+    <string name="str_faultanalysis">故障分析</string>
+    <string name="str_linediagnosis">线路诊断</string>
+    <string name="str_traceroutediagnosis">Traceroute诊断</string>
+    <string name="str_pingdiagnosis">Ping诊断</string>
+    <string name="choiceWAN">选择WAN链接</string>
+
+
+    <string name="setupparameters">参数设置</string>
+    <string name="startdiagnosis">开始诊断</string>
+
+
+    <string name="Copyright">Copyright©  中国移动物联网  版权所有</string>
+    <string name="wanaddress">地址</string>
+    <string name="packetsize">包大小(字节)</string>
+    <string name="numberoftimes">次数</string>
+    <string name="timeout">超时时间(毫秒)</string>
+    <string name="pingaddress">Ping地址</string>
+    <string name="pingtimeout">Ping次数</string>
+    <string name="pingpakgesize">Ping包大小(字节)</string>
+    <string name="successtime">成功次数</string>
+    <string name="defauttime">失败次数</string>
+    <string name="averageresponstime">平均响应时间(毫秒)</string>
+    <string name="minimumresponsetime">最小响应时间(毫秒)</string>
+    <string name="maxresponsetime">最大响应时间(毫秒)</string>
+    <string name="ipaddress">IP地址</string>
+    <string name="username">Username:</string>
+    <string name="diagnosticstatus">诊断状态:</string>
+    <string name="diagnosticresponsetime">诊断响应时间(毫秒):</string>
+    <string name="numberofjumps">实际探测到的总跳数:</string>
+    <string name="errorcode">错误码:</string>
+    <string name="macaddress">主机地址:</string>
+    <string name="roundtriptime">往返时间:</string>
+    <string name="notfindworkorder">未找到工单</string>
+    <string name="jobnumber">工单号:</string>
+    <string name="jobnumber1">工单号</string>
+    <string name="typeofservice">业务类型:</string>
+    <string name="typeofservice1">业务类型</string>
+    <string name="broadbandaccount">宽带账号:</string>
+    <string name="logid">loid:</string>
+
+
+    <string name="workingtime">工单时间:</string>
+    <string name="workorderdetails">工单详情</string>
+    <string name="workorderoperationnote">操作记录</string>
+    <string name="settingparametervalues">设定参数值</string>
+    <string name="net_loading">加载中</string>
+    <string name="net_success">刷新成功</string>
+    <string name="net_error">网路加载失败，请检测您的网络</string>
+    <string name="stateofwork">工单状态</string>
+    <string name="terminalinformation">终端信息</string>
+    <string name="softwareversion">软件版本</string>
+    <string name="worksheetinformation">工单信息</string>
+    <string name="provincialcode">省代码</string>
+    <string name="servicecode">业务代码</string>
+    <string name="gatewaylogicalidentification">网关逻辑标识</string>
+    <string name="commencementdate">开工单日期</string>
+    <string name="nomalynetworkelement">异常网元</string>
+    <string name="servicedialing">业务拨测</string>
+    <string name="sefreshstatus">刷新状态</string>
+    <string name="server">服务器</string>
+    <string name="serverdetails">服务器信息</string>
+    <string name="harddiskcapacity">硬盘容量</string>
+    <string name="memory">内存</string>
+    <string name="cpu">CPU</string>
+    <string name="theresultsofthedialing">本次拨测结果</string>
+    <string name="total">总数:</string>
+    <string name="passthrough">通过:</string>
+    <string name="fail">失败:</string>
+    <string name="service">业务:</string>
+    <string name="time">时间:</string>
+    <string name="result">结果</string>
+    <string name="choicenetelement">选择网元</string>
+    <string name="giveupservicedilaing">确定放弃此次拨测</string>
+    <string name="str_sure">确定</string>
+    <string name="workorderoperationnote_5">操作记录(默认5条)</string>
+
+
+
+    <string name="ne_now">当前: %1$s</string>
+    <string name="gateway_data">网关数据</string>
+    <string name="loading_trend">放装量趋势</string>
+    <string name="business_dev">业务发展情况</string>
+    <string name="repair_order">工单统计</string>
+    <string name="app_bind_account">APP绑定量</string>
+    <string name="dscp">DSCP</string>
+    <string name="protocoltype">协议类型</string>
+    <string name="hdd_capability_trend">硬盘容量趋势</string>
+    <string name="relogin">账号失效，请重新登录</string>
+
+</resources>

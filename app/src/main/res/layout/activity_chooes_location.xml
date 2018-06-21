@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activityChooseNE_tvNowNE"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/col_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/sp_15"
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/sp_16"
+            tools:text="@string/ne_now" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/col_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/sp_15"
+            android:text="最近选择"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/sp_16" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activityChooseNE_rvRecently"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_10" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/col_height"
+                android:gravity="center_vertical"
+                android:text="省市"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/col_height"
+                android:gravity="center_vertical"
+                android:text="安徽省"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/sp_16"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activityChooseNE_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

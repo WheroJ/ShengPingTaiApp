@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:paddingLeft="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/item_workOrderOperationLogListData_operationLogDayTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/sp_16"/>
+
+        <TextView
+            android:id="@+id/item_workOrderOperationLogListData_operationLogStatus"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_toLeftOf="@+id/image_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/green_0ac"
+            android:textSize="@dimen/sp_16"/>
+
+        <ImageView
+            android:id="@+id/image_enter"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_enter"/>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/gray_f2"/>
+    </RelativeLayout>
+</LinearLayout>

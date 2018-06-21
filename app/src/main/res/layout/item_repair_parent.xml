@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gateway_rela_moreinfo"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:background="@color/white"
+    android:minHeight="@dimen/dp_50">
+
+    <ImageView
+        android:id="@+id/itemRepairParent_imageLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_5"
+        tools:src="@mipmap/icon_bind_end" />
+
+    <TextView
+        android:id="@+id/itemRepairParent_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toRightOf="@+id/itemRepairParent_imageLeft"
+        android:text="@string/more"
+        android:textColor="@color/main_blue"
+        android:textSize="@dimen/sp_16" />
+
+    <ImageView
+        android:id="@+id/itemRepairParent_imageRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:src="@mipmap/icon_pull" />
+</RelativeLayout>

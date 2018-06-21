@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cmcc.pp.ui.widget.RefreshLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_f2"
+    android:id="@+id/content">
+
+    <ScrollView
+        android:id="@+id/trace_scrollview_diagnosis"
+        android:visibility="visible"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            layout="@layout/layout_traceroutediagnosis_body"></include>
+    </ScrollView>
+
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/tracediag_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/layout_traceroutediagnosis_result"></include>
+    </ScrollView>
+
+</com.cmcc.pp.ui.widget.RefreshLinearLayout>

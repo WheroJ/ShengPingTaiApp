@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/layoutTab_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp_25"
+        android:padding="1px"
+        android:background="@drawable/radius_deepline_2"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/layoutTab_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/selector_tab_font"
+            tools:text="日" />
+
+        <RadioButton
+            android:id="@+id/layoutTab_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_right"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/selector_tab_font"
+            tools:text="月" />
+    </RadioGroup>
+
+</RelativeLayout>

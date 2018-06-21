@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_lin_seriverlist"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_seriverlist_ip"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="192.168.1.2"
+            android:gravity="center"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_deep"/>
+
+        <TextView
+            android:id="@+id/item_seriverlist_status"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Vert.x"
+            android:gravity="center_vertical|end"
+            android:textSize="@dimen/sp_16"
+            tools:textColor="@color/main_red"/>
+
+        <ImageView
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_enter"/>
+    </LinearLayout>
+</LinearLayout>

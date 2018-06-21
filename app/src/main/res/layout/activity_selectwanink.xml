@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cmcc.pp.ui.widget.RefreshLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_f2"
+    android:id="@+id/content">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_wanink"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_null"
+        android:paddingTop="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="没有数据"
+        android:textColor="@color/gray_light"
+        android:textSize="@dimen/dp_16"
+        android:gravity="center_horizontal"
+        android:background="@color/white"/>
+
+
+    <!--<include-->
+        <!--layout="@layout/item_selectwanlink"></include>-->
+
+</com.cmcc.pp.ui.widget.RefreshLinearLayout>

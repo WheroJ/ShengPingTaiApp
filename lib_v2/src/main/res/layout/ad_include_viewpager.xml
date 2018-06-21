@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zrspring.libv2.view.adview.core.ADLoopViewPager
+            android:id="@+id/cbLoopViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/loPageTurningPoint"
+                android:layout_width="fill_parent"
+                android:layout_height="7dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#30565656"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="1dip"
+                android:paddingTop="1dip"></LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/ad_view_count_numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="Medium Text"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

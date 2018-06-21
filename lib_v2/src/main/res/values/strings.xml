@@ -1,0 +1,48 @@
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">省平台APP</string>
+
+    <string name="lib_v2_developing">功能正在开发中</string>
+
+    <string name="no_network_connection" translatable="false">No network connection found</string>
+    <string name="generic_server_down" translatable="false">Server down</string>
+    <string name="generic_server_timeout" translatable="false">Server Timeout</string>
+    <string name="generic_error" translatable="false">No internet</string>
+    <string name="no_internet" translatable="false">No internet</string>
+    <string name="parsing_failed" translatable="false">Parsing Failure</string>
+    <string name="auth_failed" translatable="false">Authentication Failure</string>
+
+
+    <integer-array name="material_colors">
+        <item>@color/material_red</item>
+        <item>@color/material_green</item>
+        <item>@color/material_blue</item>
+        <item>@color/material_yellow</item>
+    </integer-array>
+
+    <!-- MaterialRefresh e -->
+    <string name="lib_okhttp_unknow_error">未知网络错误</string>
+    <string name="lib_okhttp_net_error">网络错误,请稍后再试</string>
+    <string name="lib_okhttp_server_inside_error">服务器发生错误</string>
+    <string name="lib_okhttp_server_data_error">服务器数据异常</string>
+    <string name="lib_okhttp_no_connect_error">请检查网络连接</string>
+    <string name="lib_okhttp_out_of_time">请求超时</string>
+
+    <string name="time_tools_space_day">1天前</string>
+    <string name="time_tools_space_day_up">天前</string>
+    <string name="time_tools_space_houres">1小时前</string>
+    <string name="time_tools_space_houres_up">小时前</string>
+    <string name="time_tools_space_minute">1分钟前</string>
+    <string name="time_tools_space_minute_up">分钟前</string>
+    <string name="time_tools_space_just">刚刚</string>
+
+    <string name="lib_no_net_retry">重试</string>
+    <string name="lib_no_net_exit">离开</string>
+
+    <string name="per_please_open_call">请在应用设置里拨打电话权限</string>
+    <string name="per_please_open_contacts">请在应用设置里打开通讯录权限</string>
+    <string name="per_please_open_camera">请在应用设置里打摄像头权限</string>
+    <string name="per_please_open_location">请在应用设置里打开定位权限</string>
+    <string name="per_please_open_sdcard">请在应用设置里打开读取储存卡权限</string>
+    <string name="per_please_open_phone_state">请在应用设置里打开读取手机状态权限</string>
+
+</resources>

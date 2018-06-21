@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cmcc.pp.ui.widget.RefreshLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_label" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:gravity="center"
+            android:text="@string/nomalynetworkelement"
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/platformmonitoring_tv_nomalynetworkelement"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:text="3个"
+            android:textColor="@color/main_red"
+            android:textSize="@dimen/sp_16" />
+
+
+    </LinearLayout>
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_weight="1"
+        android:background="@color/white">
+        <include
+            layout="@layout/item_paltformmonitoring"></include>
+    </ScrollView>-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/platformmonitoring_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:background="@color/deep_line">
+
+    </View>
+
+    <RadioGroup
+        android:id="@+id/platformmonitoring_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:background="@color/gray_80f2"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/platformmonitoring_butt_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selecter_sefreshstatus_button_bg"
+            android:drawableLeft="@drawable/selecter_sefreshstatus_button_drawable_left"
+            android:text="@string/sefreshstatus"
+            android:textColor="@drawable/selecter_sefreshstatus_button_text"
+            android:textSize="@dimen/sp_18"
+            android:drawablePadding="@dimen/dp_16"
+            android:paddingLeft="@dimen/dp_40"
+            android:button="@null"/>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@color/gray_f2"></View>
+
+        <RadioButton
+            android:id="@+id/platformmonitoring_butt_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selecter_sefreshstatus_button_bg"
+            android:drawableLeft="@drawable/selecter_sefreshstatus_button_drawable"
+            android:text="@string/servicedialing"
+            android:textColor="@drawable/selecter_sefreshstatus_button_text"
+            android:textSize="@dimen/sp_18"
+            android:drawablePadding="@dimen/dp_16"
+            android:paddingLeft="@dimen/dp_40"
+            android:button="@null"/>
+
+
+    </RadioGroup>
+</com.cmcc.pp.ui.widget.RefreshLinearLayout>

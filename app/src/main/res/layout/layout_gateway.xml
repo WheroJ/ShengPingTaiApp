@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_15"
+        android:background="@color/gray_f2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/col_height"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/radius_yellow_bar" />
+
+        <TextView
+            android:text="@string/gateway_data"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/col_height"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray_deep"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/light_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragmentTransactionData_rvGatewayData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_gravity="center_horizontal"
+        android:text="入库总量、库存量数据不随区域变化"
+        android:textColor="@color/gray_light"
+        android:textSize="@dimen/sp_14"
+        android:background="@drawable/radius_grayf2_100"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_15"/>
+</merge>

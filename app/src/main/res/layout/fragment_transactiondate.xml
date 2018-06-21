@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+
+    <com.cmcc.pp.ui.widget.RefreshLinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragmentTransactionData_tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/col_height"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:background="@color/white"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableRight="@mipmap/icon_pull"
+            android:gravity="center_vertical"
+            android:textColor="@color/deep_line"
+            android:textSize="@dimen/sp_15"
+            tools:text="重庆市" />
+
+        <include layout="@layout/layout_gateway" />
+        <include layout="@layout/layout_loading_trend"/>
+        <include layout="@layout/layout_business_dev"/>
+        <include layout="@layout/layout_repair_order"/>
+        <include layout="@layout/layout_binding_amount"/>
+
+    </com.cmcc.pp.ui.widget.RefreshLinearLayout>
+</ScrollView>

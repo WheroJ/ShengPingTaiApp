@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+
+    <declare-styleable name="SideBar">
+        <attr name="scaleSize" format="integer"/>
+        <attr name="scaleItemCount" format="integer"/>
+        <attr name="scaleWidth" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="RefreshLinearLayout">
+        <attr name="headerBackground" format="color"/>
+        <attr name="headerImage" format="reference"/>
+        <attr name="headerText" format="string"/>
+        <attr name="headerAnim" format="boolean"/>
+        <attr name="headerStatus" format="enum">
+            <enum name="LOADING" value="1"/>
+            <enum name="SUCCESS" value="2"/>
+            <enum name="FAIL" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BarGraphView">
+        <attr name="backDrawable" format="reference"/>
+        <attr name="ratio" format="fraction"/>
+    </declare-styleable>
+
+    <declare-styleable name="TabLayout">
+        <attr name="leftButton" format="string"/>
+        <attr name="rightButton" format="string"/>
+    </declare-styleable>
+
+
+
+
+
+</resources>

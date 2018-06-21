@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cmcc.pp.ui.widget.RefreshLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_f2"
+    android:id="@+id/content">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/pingdiag_lin_diagnosis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray_f2">
+
+        <LinearLayout
+            android:id="@+id/pingdiag_lin_choiceWAN"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_label"/>
+            <TextView
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/choiceWAN"
+                android:gravity="center"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/gray_deep"/>
+
+            <TextView
+                android:id="@+id/tv_connectionType"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text=""
+                android:gravity="center_vertical|end"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/gray_deep"/>
+
+            <ImageView
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_enter"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_16"
+            android:background="@color/gray_f2"></View>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_label"/>
+            <TextView
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/setupparameters"
+                android:gravity="center"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/gray_deep"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/deep_line"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/gray_deep"
+                    android:text="@string/wanaddress"/>
+
+                <EditText
+                    android:id="@+id/edt_host"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|end"
+                    android:hint="请输入链接地址"
+                    android:textColor="@color/gray_deep"
+                    android:textColorHint="@color/gray_light"
+                    android:inputType="textWebEmailAddress"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/sp_14"
+                    android:text="www.baidu.com"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:background="@color/deep_line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/gray_deep"
+                    android:text="@string/packetsize"/>
+
+                <EditText
+                    android:id="@+id/edt_dataBlockSize"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|end"
+                    android:hint="请输入包大小(字节)"
+                    android:textColor="@color/gray_deep"
+                    android:textColorHint="@color/gray_light"
+                    android:inputType="number"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/sp_14"
+                    android:singleLine="true"
+                    android:text="100"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:background="@color/deep_line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/gray_deep"
+                    android:text="@string/numberoftimes"/>
+
+                <EditText
+                    android:id="@+id/edt_numberOfRepetitions"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|end"
+                    android:hint="请输入次数"
+                    android:textColor="@color/gray_deep"
+                    android:textColorHint="@color/gray_light"
+                    android:inputType="number"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/sp_14"
+                    android:singleLine="true"
+                    android:text="3"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:background="@color/deep_line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/gray_deep"
+                    android:text="@string/timeout"/>
+
+                <EditText
+                    android:id="@+id/edt_timeout"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|end"
+                    android:hint="请输入超时时间(毫秒)"
+                    android:textColor="@color/gray_deep"
+                    android:textColorHint="@color/gray_light"
+                    android:inputType="number"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/sp_14"
+                    android:singleLine="true"
+                    android:text="4000"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pingdiag_butt_start"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:gravity="center"
+            android:text="@string/startdiagnosis"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_blue_all_4radius"/>
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/pingdiag_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/layout_pingdiagnosis_result"></include>
+    </ScrollView>
+
+
+</com.cmcc.pp.ui.widget.RefreshLinearLayout>
